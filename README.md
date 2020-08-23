@@ -31,10 +31,9 @@ const FeedbackButton: React.FunctionComponent<{ mobile?: boolean }> = () => {
 }
 ```
 
-FeedbackDialog takes 6 props: 
+FeedbackDialog takes 5 props: 
 * `open` [boolean]: whether the dialog is shown or not
 * `onClose` [function]: callback to close the dialog
-* `tenantId` [string]: Channel Id of your feedback-channel at [https://feedback.fochlac.com]. You can use this service to store your feedback fully enctypted.
 * `onSubmit` [function]: callback on submit with the feedback object:
 ```
 {
@@ -43,12 +42,15 @@ FeedbackDialog takes 6 props:
     screenshot: 'base64-encoded screenshot in webp format'
 }
 ```
+* `noScreenshot` [boolean]: whether the option to show a screenshot is shown at all.
 * `className` [string]: className applied to the dialog component.
 * `text` [object]: possibility to overwrite the default strings:
     * title
     * cancel
     * submit
     * contentText
+    * emailLabel
+    * emailError
     * feedbackLabel
     * includeScreenshot
     * tooltipPen
