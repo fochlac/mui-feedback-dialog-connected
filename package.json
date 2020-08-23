@@ -1,6 +1,6 @@
 {
     "name": "mui-feedback-dialog-connected",
-    "version": "1.0.0-0",
+    "version": "1.0.0",
     "homepage": "https://github.com/fochlac/mui-feedback-dialog",
     "description": "A customizeable React feedback form with optional screenshot via screen capture and canvas editor based on material-ui.",
     "main": "dist/index.js",
@@ -73,7 +73,7 @@
         "husky": "^4.2.5",
         "jest": "^26.1.0",
         "jest-junit": "^11.0.0",
-        "mui-feedback-dialog": "^1.0.9",
+        "mui-feedback-dialog": "^1.1.0",
         "node-rsa": "^1.1.1",
         "npm-run-all": "^4.1.5",
         "null-loader": "^4.0.0",
