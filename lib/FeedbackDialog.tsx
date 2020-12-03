@@ -6,6 +6,8 @@ import { encryptStrings } from './utils/encrypt'
 
 interface Props {
     open?: boolean;
+    useScreencapture?: boolean;
+    noScreenshot?: boolean;
     onClose?: () => void;
     onSubmit?: (feedback: { screenshot?: string; description: string; email: string }) => unknown;
     tenantId: string;
