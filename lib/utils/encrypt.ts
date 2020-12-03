@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 import NodeRSA from 'node-rsa'
 import aesjs from 'aes-js'
 

@@ -18,7 +18,7 @@ interface Props {
 export const FeedbackDialog: React.FunctionComponent<Props> = ({ onSubmit, tenantId, ...props }) => {
     const submitWithTenant = async ({ description, screenshot, email }) => {
         if (tenantId) {
-            const key = await getRequest(`https://feedback.fochlac.com/api/tenants/${tenantId}/key`)
+            const key:string = await getRequest(`https://feedback.fochlac.com/api/tenants/${tenantId}/key`) as string
 
             const [encryptedDescription, encryptedSS, encryptedMail] = encryptStrings([description, screenshot, email], key)
 

@@ -3,7 +3,7 @@ const headers = {
     'Content-Type': 'application/json'
 }
 
-export const getRequest = (url) => {
+export const getRequest = (url:string):Promise<unknown> => {
     return fetch(url, { headers }).then((res) => (res.status < 400 ? res.json() : Promise.reject(res.json())))
 }
 
