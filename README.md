@@ -43,6 +43,7 @@ FeedbackDialog takes 5 props:
 }
 ```
 * `noScreenshot` [boolean]: whether the option to show a screenshot is shown at all.
+* `attachScreenshotOnOpen` [boolean]: whether the option to show a screenshot is preselected.
 * `useScreencapture` [boolean=false]: whether to use screencapture or dom-to-html. Also controls whether the `screenshotInfo`-info box will be displayed.
 * `className` [string]: className applied to the dialog component.
 * `text` [object]: possibility to overwrite the default strings:

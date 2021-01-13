@@ -8,6 +8,7 @@ interface Props {
     open?: boolean;
     useScreencapture?: boolean;
     noScreenshot?: boolean;
+    attachScreenshotOnOpen?: boolean;
     onClose?: () => void;
     onSubmit?: (feedback: { screenshot?: string; description: string; email: string }) => unknown;
     tenantId: string;
